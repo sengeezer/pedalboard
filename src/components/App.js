@@ -1,11 +1,16 @@
 import React from 'react';
-import './App.css';
+
+import CssBaseline from '@material-ui/core/CssBaseline';
 
 const App = () => {
   return (
-    <div className="App">
-      Pedalboard
-    </div>
+    <>
+      <CssBaseline />
+      <div className="App">
+        Pedalboard
+      </div>
+    </>
+    
   );
 };
 
