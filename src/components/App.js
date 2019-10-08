@@ -1,16 +1,28 @@
 import React from 'react';
 
-import CssBaseline from '@material-ui/core/CssBaseline';
+import { CssBaseline, Grid } from '@material-ui/core';
 
 const App = () => {
   return (
     <>
       <CssBaseline />
-      <div className="App">
-        Pedalboard
-      </div>
+      <Grid
+        container
+        direction="row"
+        justify="center"
+        alignItems="flex-start"
+      >
+        <Grid item xs={12}>
+          Pedalboard
+        </Grid>
+        <Grid item xs={3}>
+          Nav
+        </Grid>
+        <Grid item xs={9}>
+          Content
+        </Grid>
+      </Grid>
     </>
-    
   );
 };
 
